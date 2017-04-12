@@ -42,7 +42,7 @@ variable "num_webs" {
 }
 
 resource "aws_instance" "web" {
-  ami           = "ami-eea9f38e"
+  ami           = "ami-eea9f38e1111"
   count         = "${var.num_webs}"
   instance_type = "t2.micro"
 
