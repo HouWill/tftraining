@@ -41,6 +41,7 @@ variable "num_webs" {
   default = "3"
 }
 
+[ ]
 resource "aws_instance" "web" {
   ami           = "ami-eea9f38e"
   count         = "${var.num_webs}"
